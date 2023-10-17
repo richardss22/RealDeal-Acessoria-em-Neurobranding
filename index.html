@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>RealDeal</title>
+    <script src="/js/script.js"></script>
+    <style>
+        .banner2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 50px;
+            text-align: center;
+        }
+        .banner2 .texto {
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"> RealDeal </a>
+        </div>
+
+        <ul>
+            <li> <a href="index.html"> Início </a> </li>
+            <li> <a href="artigo/REALDEAL.docx" target="_blank"> Sobre </a> </li>
+            <li> <a href="#"> Parceiros </a> </li>
+            <li> <a href="#"> LOGIN </a> </li>
+        </ul>
+
+    </nav>
+    <section class="banner" id="banner">
+        <div class="texto">
+            <h1 class="titulo-dois-tons">REALDEAL</h1>
+           <h2 class="sub_titulo">De que forma a neurociência do consumidor e o neuromarketing podem auxiliar
+            pequenos empreendedores a identificarem as necessidades do seu público-alvo?</h2>
+           <div class="botoes">
+               <button onclick="scrollToSection('#banner2')" class="n-overlay">Saiba Mais</button>
+           </div>
+        </div>
+    </section>
+    <section class="banner2" id="banner2">
+        <div class="texto2">
+            <h1 class="titulo2">Nosso Conteúdo</h1>
+        </div>
+        <div class="texto3">
+            <h2>Objetivo</h2>
+            <p> O objetivo da pesquisa passa a relacionar os estudos do
+                campo da neurociência do consumidor e a aplicação dos conceitos de neuromarketing
+                (psicologia das cores, branding, storytelling, entre outros) para que o pequeno
+                empreendedor possa conhecer o seu público-alvo e assim desenvolver o seu negócio
+                de maneira assertiva, destacando-se no mercado competitivo e saindo da zona de
+                risco. </p>
+        </div>
+        <div class="texto4">
+            <h2>Metodologias</h2>
+            <p>1. Análise do perfil do negócio;
+
+                2. Identificação dos problemas e oportunidades sobre o seu público-alvo;
+                
+                3. Aplicação da Neurociência do Consumidor;
+                
+                4. Implantação das estratégias de Neuromarketing.
+                </p>
+        </div>
+        <div class="texto5">
+            <h2>Justificativa</h2>
+            <p>O empreendedorismo funciona como a mola propulsora da economia mundial e
+                reproduzindo essa tendência global, observa-se no cenário brasileiro uma crescente
+                onda desse processo, que dentre as inúmeras possibilidades pode surgir de um
+                planejamento estruturado ou em decorrência de uma crise financeira. </p>
+        </div>        
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <section class="banner3" id="banner3">
+        <div class="texto3">
+            <h1 class="titulo3">Membros</h1>
+            <div class="membros">
+                <p>Isabella Mendes Santana</p>
+                <p>Larissa Pereira de Carvalho</p>
+                <p>Loise Rodrigues de Souza</p>
+                <p>Natalia Sousa Silva</p>
+                <p>Richard Silva Santana</p>
+            </div>            
+        </div>
+</body>
+</html>
